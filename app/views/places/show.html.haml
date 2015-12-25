@@ -1,0 +1,12 @@
+.container
+  .row
+    .col-sm-6
+      %p#notice= notice
+
+      %p
+        %b Place:
+        = @place.place
+
+      = link_to 'Edit', edit_place_path(@place)
+      \|
+      = link_to 'Back', places_path
